@@ -339,7 +339,14 @@ function Link({ href, children }) {
 
 // ─── Main Component ──────────────────────────────────────────
 export default function DoItLiveGuide() {
-  const [os, setOs] = useState(null);
+  const [os, setOs] = useState(() => {
+    if (typeof navigator === "undefined") return "windows";
+    const p = navigator.platform?.toLowerCase() || "";
+    const ua = navigator.userAgent?.toLowerCase() || "";
+    if (p.startsWith("mac") || /macintosh/.test(ua)) return "mac";
+    if (/linux/.test(p) && !/android/.test(ua)) return "linux";
+    return "windows";
+  });
   const stepsRef = useRef(null);
 
   useEffect(() => {
