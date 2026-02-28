@@ -183,7 +183,7 @@ function VideoLink({ href, title, duration }) {
           flexShrink: 0,
         }}
       >
-        <span style={{ fontSize: 14, marginLeft: 2 }}>▶</span>
+        <span style={{ fontSize: 14, marginLeft: 2, color: "rgba(255,60,60,0.8)" }}>▶</span>
       </div>
       <div style={{ flex: 1 }}>
         <div

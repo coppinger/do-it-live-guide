@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://doitlive.guide"),
   title: "doitlive.guide — Go live on Twitch",
   description:
     "No fluff, no affiliate links, no gear you need to buy. The fastest path from zero to streaming with stuff you already have.",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "doitlive.guide — Go live on Twitch",
     description:
       "No fluff, no affiliate links, no gear you need to buy. The fastest path from zero to streaming with stuff you already have.",
