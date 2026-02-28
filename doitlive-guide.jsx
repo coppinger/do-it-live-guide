@@ -419,7 +419,7 @@ export default function DoItLiveGuide() {
           doitlive<span style={{ color: T.accent }}>.guide</span>
         </div>
         <a
-          href="https://buildstory.ai"
+          href="https://buildstory.com"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -713,9 +713,9 @@ export default function DoItLiveGuide() {
                 hardware and connection.
               </Body>
               <VideoLink
-                href="https://www.youtube.com/watch?v=jKghEiEOBGg"
-                title="OBS Studio — Complete Beginner Tutorial (Gaming Careers)"
-                duration="20 min"
+                href="https://www.youtube.com/watch?v=9z9GiEM4uvA"
+                title="Complete OBS Tutorial for Beginners (Primal Video, 2025)"
+                duration="17 min"
               />
             </Step>
 
@@ -828,9 +828,9 @@ export default function DoItLiveGuide() {
               )}
 
               <VideoLink
-                href="https://www.youtube.com/watch?v=DTk99mHDX_I"
-                title="How To Set Up Scenes & Sources in OBS Studio (OBS Tutorial)"
-                duration="8 min"
+                href="https://www.youtube.com/watch?v=9z9GiEM4uvA&t=414s"
+                title="OBS Scenes & Sources Setup (Primal Video, 2025)"
+                duration="~7 min section"
               />
             </Step>
 
@@ -910,9 +910,9 @@ export default function DoItLiveGuide() {
                 Recording), talk for 30 seconds, and listen back.
               </Body>
               <VideoLink
-                href="https://www.youtube.com/watch?v=jKghEiEOBGg&t=746s"
-                title="OBS Audio Setup & Filters Walkthrough (Gaming Careers)"
-                duration="~5 min section"
+                href="https://www.youtube.com/watch?v=9z9GiEM4uvA&t=845s"
+                title="OBS Audio Configuration (Primal Video, 2025)"
+                duration="~3 min section"
               />
             </Step>
 
@@ -1150,7 +1150,7 @@ export default function DoItLiveGuide() {
                 can do. No excuses left.
               </Body>
               <a
-                href="https://buildstory.ai"
+                href="https://buildstory.com"
                 style={{
                   fontFamily: T.mono,
                   fontSize: 13,
