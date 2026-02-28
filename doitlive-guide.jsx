@@ -7,8 +7,8 @@ const T = {
   surface: "#141312",
   border: "#1e1c1a",
   borderHover: "#2a2724",
-  muted: "#3d3a36",
-  subtle: "#6b6560",
+  muted: "#807b73",
+  subtle: "#8a847c",
   body: "#a09890",
   heading: "#e8e4de",
   accent: "#c4a35a",
@@ -96,7 +96,7 @@ function OSCard({ icon, label, sublabel, selected, onClick }) {
       <span
         style={{
           fontFamily: T.mono,
-          fontSize: 10,
+          fontSize: 11,
           color: T.muted,
           letterSpacing: "0.1em",
           textTransform: "uppercase",
@@ -183,7 +183,7 @@ function VideoLink({ href, title, duration }) {
           flexShrink: 0,
         }}
       >
-        <span style={{ fontSize: 14, marginLeft: 2, color: "rgba(255,60,60,0.8)" }}>▶</span>
+        <span style={{ fontSize: 14, marginLeft: 2, color: "rgba(255,60,60,1)" }}>▶</span>
       </div>
       <div style={{ flex: 1 }}>
         <div
@@ -201,7 +201,7 @@ function VideoLink({ href, title, duration }) {
         <div
           style={{
             fontFamily: T.mono,
-            fontSize: 10,
+            fontSize: 11,
             color: T.muted,
             marginTop: 2,
           }}
@@ -209,7 +209,7 @@ function VideoLink({ href, title, duration }) {
           YouTube · {duration}
         </div>
       </div>
-      <span style={{ fontFamily: T.mono, fontSize: 10, color: T.muted }}>↗</span>
+      <span style={{ fontFamily: T.mono, fontSize: 11, color: T.muted }}>↗</span>
     </a>
   );
 }
@@ -288,7 +288,7 @@ function Callout({ children, type = "tip" }) {
       <span
         style={{
           fontFamily: T.mono,
-          fontSize: 10,
+          fontSize: 11,
           fontWeight: 700,
           letterSpacing: "0.15em",
           textTransform: "uppercase",
@@ -299,7 +299,7 @@ function Callout({ children, type = "tip" }) {
       >
         {c.label}
       </span>
-      <div style={{ fontFamily: T.mono, fontSize: 12, lineHeight: 1.7, color: T.subtle }}>
+      <div style={{ fontFamily: T.mono, fontSize: 13, lineHeight: 1.7, color: T.subtle }}>
         {children}
       </div>
     </div>
@@ -424,7 +424,7 @@ export default function DoItLiveGuide() {
           rel="noopener noreferrer"
           style={{
             fontFamily: T.mono,
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: "0.15em",
             textTransform: "uppercase",
             color: T.muted,
@@ -449,7 +449,7 @@ export default function DoItLiveGuide() {
         <div
           style={{
             fontFamily: T.mono,
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: "0.25em",
             textTransform: "uppercase",
             color: T.accent,
@@ -500,7 +500,7 @@ export default function DoItLiveGuide() {
                     <div
             style={{
               fontFamily: T.mono,
-              fontSize: 10,
+              fontSize: 11,
               letterSpacing: "0.2em",
               textTransform: "uppercase",
               color: T.accent,
@@ -611,7 +611,7 @@ export default function DoItLiveGuide() {
         <div
           style={{
             fontFamily: T.mono,
-            fontSize: 10,
+            fontSize: 11,
             letterSpacing: "0.2em",
             textTransform: "uppercase",
             color: T.muted,
@@ -666,7 +666,7 @@ export default function DoItLiveGuide() {
             <div
               style={{
                 fontFamily: T.mono,
-                fontSize: 10,
+                fontSize: 11,
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 color: T.muted,
@@ -965,8 +965,17 @@ export default function DoItLiveGuide() {
                 ))}
               </div>
               <Callout type="note">
-                If your stream is laggy or dropping frames, lower your bitrate to 3000 kbps and
-                resolution to 1280×720. Smooth 720p beats choppy 1080p every time.
+                Run a speed test at{" "}
+                <a href="https://fast.com" target="_blank" rel="noopener noreferrer" style={{ color: T.accent, textDecoration: "none" }}>fast.com</a> or{" "}
+                <a href="https://www.speedtest.net" target="_blank" rel="noopener noreferrer" style={{ color: T.accent, textDecoration: "none" }}>speedtest.net</a>{" "}
+                and check your <span style={{ color: T.heading, fontWeight: 700 }}>upload</span> speed.
+                Set your bitrate to roughly 75% of it — e.g. 5 Mbps upload → 3500 kbps bitrate.
+                Twitch currently caps at 6000 kbps — see the{" "}
+                <a href="https://help.twitch.tv/s/article/broadcasting-guidelines" target="_blank" rel="noopener noreferrer" style={{ color: T.accent, textDecoration: "none" }}>
+                  broadcasting guidelines
+                </a>{" "}
+                for the latest. If your stream is laggy or dropping frames, lower to 3000 kbps
+                and 1280×720 — smooth 720p beats choppy 1080p every time.
               </Callout>
             </Step>
 
@@ -1035,7 +1044,7 @@ export default function DoItLiveGuide() {
               <div
                 style={{
                   fontFamily: T.mono,
-                  fontSize: 10,
+                  fontSize: 11,
                   letterSpacing: "0.2em",
                   textTransform: "uppercase",
                   color: T.muted,
