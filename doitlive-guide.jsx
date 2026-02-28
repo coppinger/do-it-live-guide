@@ -590,8 +590,8 @@ export default function DoItLiveGuide() {
               >
                 Charlie
               </p>
-              <p style={{ margin: 0, color: T.subtle, fontSize: 12 }}>
-                p.s. let's do it live 🫡
+              <p style={{ margin: 0, color: T.subtle, fontSize: 12, display: "flex", alignItems: "center", gap: 6 }}>
+                p.s. let's do it live <img src="/do-it-live-favicon.png" alt="" style={{ width: 20, height: 20, display: "inline-block", verticalAlign: "middle" }} />
               </p>
             </div>
           </div>
